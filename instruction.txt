@@ -1,0 +1,7 @@
+ 
+Please help me to download the Aetna medical policies that are related to prior authorization or precertification requirement in terms of procedure codes, drugs etc. If there are multiple versions, I would like to download all that are published in 2026.
+
+Please download them to a folder called downloaded.
+
+Please write a python code to do that.
+
