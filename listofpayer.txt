@@ -5,5 +5,14 @@ humana
 Anthem
 Horizon
 medica
+EviCore
+Carelon
 Avera care
 BCBS_AZ
+AvMed
+bannerhealth
+EverNorth
+DeanHealth
+US Family Health
+HighMark
+OneCare

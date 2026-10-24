@@ -1,0 +1,22 @@
+   FILES  SUBFOLDER
+   -----  ---------
+     186  Aetna
+     367  Anthem
+       3  AveraCare
+      81  AvMed
+      20  BannerHealth
+     446  BCBS_AZ
+     577  Carelon
+    1427  Cigna
+       2  DeanHealth
+     174  EverNorth
+    2186  EviCore
+      11  Highmark
+      59  Horizon
+     522  Humana
+     306  Medica
+     332  OneCare
+     745  UnitedHealthcare
+       1  USFamilyHealth
+   -----  ---------
+

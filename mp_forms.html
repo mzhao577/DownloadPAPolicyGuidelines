@@ -1,0 +1,633 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Martin’s Point - Forms &amp; Documents for Providers</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png">
+    <link rel="icon" href="/images/favicon/favicon_marine.svg" sizes="any" type="image/svg+xml">
+
+    <link rel="manifest" href="/images/favicon/site.webmanifest" crossorigin="use-credentials">
+    <link rel="mask-icon" href="/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    
+    <meta name="og:title" content="Martin’s Point - Forms & Documents for Providers" /><meta name="og:description" content="To find a Martin's Point Health Care form or document, search by document name or filter by type." /><meta name="og:url" content="https:///For-Providers/Forms-and-Documents" />
+
+    <!-- Metadata -->
+    
+
+    <!-- inject:css -->
+    <link rel="stylesheet" href="/Styles/dist/main.css?v=1608782991">
+    <!-- endinject -->
+    <script>
+        window.MPHC = window.MPHC || {};
+    </script>
+
+
+    <script src="https://www.bing.com/api/maps/mapcontrol?callback=LoadMap" async defer></script>
+    <script>
+
+
+        function UpdateForms() {
+            var submitButton = document.querySelector(".mphc-form input[type='submit']");
+            if (submitButton) {
+                let container = document.createElement("div");
+                container.classList.add("both-container");
+                let div = document.createElement("div");
+                div.classList.add("icon-container");
+                div.setAttribute("style", "display:none;");
+                let i = document.createElement("i");
+                i.classList.add("loader");
+                submitButton.parentNode.insertBefore(container, submitButton.nextSibling);
+                container.appendChild(submitButton);
+                container.appendChild(div);
+                div.appendChild(i);
+            }
+        }
+        beginAjaxCall = function (xhr) {
+            var processingCssClass = "btn__loading";
+            var processingEl = document.querySelector(".mphc-form input[type='submit']");
+            if (processingEl) {
+                processingEl.classList.add(processingCssClass);
+                processingEl.setAttribute("disabled", true);
+                var loader = processingEl.nextSibling;
+                if (loader) {
+                    loader.setAttribute("style", "display:block;");
+                }
+            }
+        }
+        completeAjaxCall = function (xhr) {
+            var processingCssClass = "btn__loading";
+            var processingEl = document.querySelector(".mphc-form input[type='submit']");
+            if (processingEl) {
+                processingEl.classList.remove(processingCssClass);
+            }
+            UpdateForms();
+        }
+    </script>
+
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PQ3JDKP');</script>
+<!-- End Google Tag Manager -->
+
+    
+<meta name="VIcurrentDateTime" content="639210298369481047" />
+<meta name="VirtualFolder" content="/" />
+<script type="text/javascript" src="/layouts/system/VisitorIdentification.js"></script>
+
+    
+    
+</head>
+<body class="">
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PQ3JDKP"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+    <div class="container__fixed">
+        
+
+
+
+<a href="#main-content" class="skip-to-main">Skip to main content</a>
+
+
+<form id="authorizationForm" action="/identity/externallogin?authenticationType=Ping&amp;ReturnUrl=%2fidentity%2fexternallogincallback%3fReturnUrl%3d%252fMy-Account%252fSigned-In%26sc_site%3dmphc%26authenticationSource%3dDefault&amp;sc_site=mphc" method="post" hidden></form>
+<a id="signOutLink" href="/Account/Sign-Out?returnUrl=%2FAccount%2FSigned-Out" hidden></a>
+
+<!-- Header -->
+<header class="header" style="">
+        <div class="header__logo">
+        <a class="logo logo__desktop" href="/" tabindex="0" aria-label="Go to Home Page"><img src="/-/media/Images/Graphics/Logos/MPHC-Logo---New.ashx?iar=0&hash=FEDA0A79BEFE919A594DC588EED8ABEF" alt="Martin&#39;s Point Health Care logo" /></a>
+        <a class="logo logo__mobile" href="/" tabindex="0" aria-label="Go to Home Page"><img src="/-/media/Images/Graphics/Logos/MPHC-Logo---New.ashx?iar=0&hash=FEDA0A79BEFE919A594DC588EED8ABEF" alt="Martin&#39;s Point Health Care logo" /></a>
+    </div>
+
+
+    <nav class="header__actions nav nav__utility">
+    <ul class="reset utility-nav">
+        
+        <li class="has-dropdown" data-function="dialog-container">
+            <button class="btn dropdown-toggle btn__link" type="button" tabindex="0">
+                <span class="icon-account"></span>
+                <span class="action-text">Sign In | Register</span>
+            </button>
+            <ul class="nav__dropdown dropdown-menu">
+                <li class="mobile-only link-back" role="none"><a href="#" role="menuitem" tabindex="0">Back</a></li>
+
+        <li>
+            <a tabindex="0" href="https://mymartinspoint.org/">Health Care Center Patients</a>
+        </li>
+
+        <li>
+            <button class="btn btn__link" type="button" data-function="sign-in" tabindex="0">
+                <span class="action-text">
+                    Health Plan Members
+                </span>
+            </button>
+        </li>
+
+        <li>
+            <button class="btn btn__link" type="button" data-function="sign-in" tabindex="0">
+                <span class="action-text">
+                    Secure Email Users
+                </span>
+            </button>
+        </li>
+
+        <li>
+            <button class="btn btn__link" type="button" data-function="sign-in" tabindex="0">
+                <span class="action-text">
+                    Network Providers
+                </span>
+            </button>
+        </li>
+            </ul>
+        </li>
+
+
+        <li>
+            <a href="/Contact-Us" tabindex="0">
+                    <span class="icon-call"></span>
+                <span class="action-text">Contact Us</span>
+            </a>
+        </li>
+
+    </ul>
+    <button class="btn btn__link" id="search-bar-trigger" aria-label="Search">
+        <span class="icon-search"></span>
+        <span class="action-text">Search</span>
+    </button>
+    <button class="btn btn__link btn__menu-toggle" id="menu-toggle" aria-label="Mobile Menu">
+        <span class="icon-hamburger"></span>
+    </button>
+</nav>
+
+<nav class="header__main-nav nav nav__main" aria-label="Main Menu Navigation">
+    <ul class="reset utility-nav">
+        
+
+        <li class="has-dropdown" data-function="dialog-container">
+            <button class="btn dropdown-toggle btn__link" type="button" tabindex="0">
+                <span></span>
+                <span class="action-text">TRICARE Plans</span>
+            </button>
+            <ul class="nav__dropdown dropdown-menu">
+                <li class="mobile-only link-back" role="none"><a href="#" role="menuitem" tabindex="0">Back</a></li>
+
+        <li>
+            <a tabindex="0" href="/US-Family-Health-Plan">US Family Health Plan</a>
+        </li>
+
+        <li>
+            <a tabindex="0" href="/Explore-Military-Benefits">Explore Plans</a>
+        </li>
+
+        <li>
+            <a tabindex="0" href="/Explore-Military-Benefits/Request-Information">Request Information</a>
+        </li>
+
+        <li>
+            <a tabindex="0" href="/Explore-Military-Benefits/Enrollment">Enroll</a>
+        </li>
+
+        <li>
+            <a tabindex="0" href="/US-Family-Health-Plan/Find-a-Provider">Find a Provider</a>
+        </li>
+
+        <li>
+            <a tabindex="0" href="/US-Family-Health-Plan/Current-Members">Current Members</a>
+        </li>
+            </ul>
+        </li>
+
+        <li class="has-dropdown" data-function="dialog-container">
+            <button class="btn dropdown-toggle btn__link" type="button" tabindex="0">
+                <span></span>
+                <span class="action-text">Medicare Plans</span>
+            </button>
+            <ul class="nav__dropdown dropdown-menu">
+                <li class="mobile-only link-back" role="none"><a href="#" role="menuitem" tabindex="0">Back</a></li>
+
+        <li>
+            <a tabindex="0" href="/Generations-Advantage">Generations Advantage</a>
+        </li>
+
+        <li>
+            <a tabindex="0" href="/Shop-Medicare-Plans">Shop Plans</a>
+        </li>
+
+        <li>
+            <a tabindex="0" href="/Shop-Medicare-Plans/Enrollment">Enroll</a>
+        </li>
+
+        <li>
+            <a tabindex="0" href="/Generations-Advantage/Find-a-Provider">Find a Provider</a>
+        </li>
+
+        <li>
+            <a tabindex="0" href="/Generations-Advantage/Current-Members">Current Members</a>
+        </li>
+            </ul>
+        </li>
+                    <li class="has-dropdown" role="none">
+                        <button id="web{99DE1DB0-747D-404A-AB7E-EC333BCD365F}en1" class="btn btn__link dropdown-toggle " data-toggle="dropdown" aria-expanded="false" role="menuitem" tabindex="0">
+                            <span>Primary Care</span><span class="visually-hidden">menu</span>
+                        </button>
+                        <ul class="nav__dropdown dropdown-menu" role="menu" aria-labelledby="web{99DE1DB0-747D-404A-AB7E-EC333BCD365F}en1">
+                            <li class="mobile-only link-back" role="none"><a href="#" role="menuitem">Back</a></li>
+                            <li class="nav-list-header" role="none"> <a href="/Primary-Care" tabindex="0" role="menuitem">Primary Care</a></li>
+                                    <li role="none"><a href="/Primary-Care/Become-a-Patient" tabindex="0" role="menuitem">Become a Patient</a></li>
+                                    <li role="none"><a href="/Primary-Care/Learn-About-Our-Services" tabindex="0" role="menuitem">Our Services</a></li>
+                                    <li role="none"><a href="/Primary-Care/Find-a-Provider" tabindex="0" role="menuitem">Find a Provider</a></li>
+                                    <li role="none"><a href="/Primary-Care/Current-Patients" tabindex="0" role="menuitem">Current Patients</a></li>
+                                    <li role="none"><a href="/Primary-Care/Current-Patients/Self-Schedule" tabindex="0" role="menuitem">Self Schedule</a></li>
+                        </ul>
+                    </li>
+
+    </ul>
+</nav>
+
+<nav class="nav nav__mobile" aria-label="Main Menu Navigation">
+    <ul class="reset" role="menubar">
+        
+
+        <li class="has-dropdown" data-function="dialog-container">
+            <button class="btn dropdown-toggle btn__link" type="button" tabindex="0">
+                <span></span>
+                <span class="action-text">TRICARE Plans</span>
+            </button>
+            <ul class="nav__dropdown dropdown-menu">
+                <li class="mobile-only link-back" role="none"><a href="#" role="menuitem" tabindex="0">Back</a></li>
+
+        <li>
+            <a tabindex="0" href="/US-Family-Health-Plan">US Family Health Plan</a>
+        </li>
+
+        <li>
+            <a tabindex="0" href="/Explore-Military-Benefits">Explore Plans</a>
+        </li>
+
+        <li>
+            <a tabindex="0" href="/Explore-Military-Benefits/Request-Information">Request Information</a>
+        </li>
+
+        <li>
+            <a tabindex="0" href="/Explore-Military-Benefits/Enrollment">Enroll</a>
+        </li>
+
+        <li>
+            <a tabindex="0" href="/US-Family-Health-Plan/Find-a-Provider">Find a Provider</a>
+        </li>
+
+        <li>
+            <a tabindex="0" href="/US-Family-Health-Plan/Current-Members">Current Members</a>
+        </li>
+            </ul>
+        </li>
+
+        <li class="has-dropdown" data-function="dialog-container">
+            <button class="btn dropdown-toggle btn__link" type="button" tabindex="0">
+                <span></span>
+                <span class="action-text">Medicare Plans</span>
+            </button>
+            <ul class="nav__dropdown dropdown-menu">
+                <li class="mobile-only link-back" role="none"><a href="#" role="menuitem" tabindex="0">Back</a></li>
+
+        <li>
+            <a tabindex="0" href="/Generations-Advantage">Generations Advantage</a>
+        </li>
+
+        <li>
+            <a tabindex="0" href="/Shop-Medicare-Plans">Shop Plans</a>
+        </li>
+
+        <li>
+            <a tabindex="0" href="/Shop-Medicare-Plans/Enrollment">Enroll</a>
+        </li>
+
+        <li>
+            <a tabindex="0" href="/Generations-Advantage/Find-a-Provider">Find a Provider</a>
+        </li>
+
+        <li>
+            <a tabindex="0" href="/Generations-Advantage/Current-Members">Current Members</a>
+        </li>
+            </ul>
+        </li>
+                    <li class="has-dropdown" role="none">
+                        <button id="web{99DE1DB0-747D-404A-AB7E-EC333BCD365F}en1" class="btn btn__link dropdown-toggle " data-toggle="dropdown" aria-expanded="false" role="menuitem" tabindex="0">
+                            <span>Primary Care</span><span class="visually-hidden">menu</span>
+                        </button>
+                        <ul class="nav__dropdown dropdown-menu" role="menu" aria-labelledby="web{99DE1DB0-747D-404A-AB7E-EC333BCD365F}en1">
+                            <li class="mobile-only link-back" role="none"><a href="#" role="menuitem">Back</a></li>
+                            <li class="nav-list-header" role="none"> <a href="/Primary-Care" tabindex="0" role="menuitem">Primary Care</a></li>
+                                    <li role="none"><a href="/Primary-Care/Become-a-Patient" tabindex="0" role="menuitem">Become a Patient</a></li>
+                                    <li role="none"><a href="/Primary-Care/Learn-About-Our-Services" tabindex="0" role="menuitem">Our Services</a></li>
+                                    <li role="none"><a href="/Primary-Care/Find-a-Provider" tabindex="0" role="menuitem">Find a Provider</a></li>
+                                    <li role="none"><a href="/Primary-Care/Current-Patients" tabindex="0" role="menuitem">Current Patients</a></li>
+                                    <li role="none"><a href="/Primary-Care/Current-Patients/Self-Schedule" tabindex="0" role="menuitem">Self Schedule</a></li>
+                        </ul>
+                    </li>
+
+        
+        <li class="has-dropdown" data-function="dialog-container">
+            <button class="btn dropdown-toggle btn__link" type="button" tabindex="0">
+                <span class="icon-account"></span>
+                <span class="action-text">Sign In | Register</span>
+            </button>
+            <ul class="nav__dropdown dropdown-menu">
+                <li class="mobile-only link-back" role="none"><a href="#" role="menuitem" tabindex="0">Back</a></li>
+
+        <li>
+            <a tabindex="0" href="https://mymartinspoint.org/">Health Care Center Patients</a>
+        </li>
+
+        <li>
+            <button class="btn btn__link" type="button" data-function="sign-in" tabindex="0">
+                <span class="action-text">
+                    Health Plan Members
+                </span>
+            </button>
+        </li>
+
+        <li>
+            <button class="btn btn__link" type="button" data-function="sign-in" tabindex="0">
+                <span class="action-text">
+                    Secure Email Users
+                </span>
+            </button>
+        </li>
+
+        <li>
+            <button class="btn btn__link" type="button" data-function="sign-in" tabindex="0">
+                <span class="action-text">
+                    Network Providers
+                </span>
+            </button>
+        </li>
+            </ul>
+        </li>
+
+
+        <li>
+            <a href="/Contact-Us" tabindex="0">
+                    <span class="icon-call"></span>
+                <span class="action-text">Contact Us</span>
+            </a>
+        </li>
+
+    </ul>
+</nav>
+
+
+</header>
+
+<div class="search search__container">
+    <div class="container">
+        <!-- Button - Close -->
+        <span aria-label="Close Search" role="button" class="icon-close" tabindex="0"><p class="hide-text">X</p></span>
+        <div class="row">
+            <div class="col"><h5>Search Martin&#39;s Point Site</h5></div>
+        </div>
+        <div class="row">
+            <div class="col-md-10">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="search-bar-input" class="sr-only">Search Martin&#39;s Point Site</label>
+                        <input type="text" class="form-control" id="search-bar-input" placeholder="Search...">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <a class="btn btn__cta btn__primary" href="#" id="search-bar-btn">Search</a>
+            </div>
+            <input type="hidden" id="search-page-url" value="/Search" />
+        </div>
+    </div>
+</div>
+
+<div id="main-content"></div>
+
+<div class="component component__callout component__hero component__hero-sub-landing">
+    <div class="container">
+
+            <div class="component component__breadcrumbs">
+        <ul class="reset breadcrumbs">
+
+                    <li class="">
+                            <a href="/For-Providers">For Providers</a>
+                    </li>
+                    <li class="current">
+                            <div class="breadcrumb-select">
+                                <select class="dropdown-select">
+                                    <option value="" hidden selected role="option">Forms &amp; Documents</option>
+                                    <option value="/For-Providers/Forms-and-Documents" role="option">Forms &amp; Documents</option>
+                                        <option value="/For-Providers/Resources">Provider Resources</option>
+                                        <option value="/For-Providers/Tools">Tools</option>
+                                        <option value="/For-Providers/Provider-Manual">Provider Manual</option>
+                                </select>
+                            </div>
+                    </li>
+        </ul>
+    </div>
+
+
+        <div class="component__hero-details">
+                <h1>Forms & Documents</h1>
+
+                                </div>
+    </div>
+</div>
+
+    <div class="component component__richtext-60-40">
+        <div class="container ">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="richtext-content">
+                        <h2><span style="font-weight: normal; color: #008080;">Our search tool will help you find the forms and documents you need to serve your patients.</span></h2>
+<p><span>To find a Martin's Point Health Care form or document, search by document name or filter by type.<br />
+</span></p>
+<br />
+<br />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<div class="container" id="forms-and-documents-search-page" data-searchinterface="{3956F3DB-A36B-45BE-9458-850C7D417FBE}">
+    <div class="row">
+        <div class="col-sm-12 col-md-9">
+            <h2>Find Forms & Documents</h2>
+            <div class="component component__search-results">
+                <form>
+                    <div class="form-row form__input-search mt-md">
+                        <div class="form-group">
+                            <label for="search-page-input"><strong>Search by Document Name or Keyword</strong></label>
+                            <div class="input__container">
+                                <input type="text" class="form-control" id="search-page-input" placeholder="Type to search forms & documents" style="width:80%;">
+                                <button type="submit" class="btn btn__cta btn__primary" id="search-page-btn">Search</button>
+                                <input type="hidden" id="hdnPageSize" value="10" />
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="col-md-4" >
+            <div class="filters" id="filters"></div>
+        </div>
+        <div class="col-sm-12 col-md-8">
+            <div class="search-results" id="search-page-results"></div>
+        </div>
+        <div class="col-sm-12 col-md-3">
+            
+        </div>
+        <div class="mobile-only mobile-search-overlay" id="mobile-search-overlay">
+
+        </div>
+    </div>
+    <div id="pagination"></div>
+</div>
+<!-- Footer -->
+<footer>
+        <div class="banner">
+            <div class="banner-content">
+                <p><strong>Suicide &amp; Crisis Lifeline</strong> |&nbsp;If you or a loved one is experiencing a mental health crisis, call or text for help.&nbsp;<a href="tel:988" class="location__phone" target="_self" title="Opens phone link" aria-label="Call 988 Suicide and Crisis Lifeline"><strong>Call 988</strong></a>&nbsp;or&nbsp;<a href="sms:741741" class="location__phone" target="_self" title="Opens text link" aria-label="Open SMS to 741741 with message HOME"><strong>Text HOME to 741741</strong></a></p>
+            </div>
+
+    </div>
+
+    <div class="container">
+        <!-- Top Row -->
+        <div class="row">
+            
+  <div class="col-md-9">
+      <ul class="reset three-column-list">
+            <li><a href="/Meet-Martins-Point">Meet Martin&#39;s Point</a></li>
+            <li><a href="/Meet-Martins-Point/Community-Impact">Community Impact</a></li>
+            <li><a href="/Meet-Martins-Point/Careers">Careers</a></li>
+            <li><a href="/Health-and-Wellness">Health &amp; Wellness</a></li>
+            <li><a href="/For-Providers/Forms-and-Documents">Forms &amp; Documents</a></li>
+            <li><a href="/For-Providers">For Providers</a></li>
+            <li><a href="/For-Brokers">For Brokers</a></li>
+            <li><a href="/Welcome">Welcome</a></li>
+            <li><a href="/Disclaimer-and-Policies">Disclaimers &amp; Policies</a></li>
+      </ul>
+  </div>
+    <div id="footer-popups" class="footer-popups">
+        <div class="popup-container" data-id="{6086434A-328D-4DD7-AD14-49215475EFDE}" data-call="">
+          <button class="popup-button ">
+              <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 96 960 960" width="24px" fill="#ffffff">
+                <path d="M240 657h313v-60H240v60Zm0-130h480v-60H240v60Zm0-130h480v-60H240v60ZM80 976V236q0-23 18-41.5t42-18.5h680q23 0 41.5 18.5T880 236v520q0 23-18.5 41.5T820 816H240L80 976Zm60-145 75-75h605V236H140v595Zm0-595v595-595Z"></path>
+              </svg>
+              <span class="visually-hidden">Provide us with feedback.</span>
+          </button>
+
+          <input type="hidden" id="footer-section-urls" value="/For-Providers" />
+
+          <div class="modal modal__warning fade" id="footer-section-popup" tabindex="-1" role="dialog" data-id="{6086434A-328D-4DD7-AD14-49215475EFDE}">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <button class="btn btn__close" type="button" data-dismiss="section-popup" aria-label="Close"></button>
+                <div class="modal-body">
+                  <h3 style="text-align: center; color: #3E3E3F; font-size: 1.75rem; margin-bottom: 15px;">
+Tell Us How We're Doing!
+</h3>
+<p style="text-align: center; font-size: 1rem; color: #444444; line-height: 1.6; margin-bottom: 20px;">
+We value your feedback as a Martin&rsquo;s Point network provider. Please take a moment to share your experience so we can continue to improve our services.
+</p>
+<p style="text-align: center; font-size: 0.9rem; color: #444444; margin-top: 10px;">
+Your feedback truly makes a difference. Thank you for helping us serve you better!
+</p>
+<p style="text-align: center;">
+<a class="btn btn__primary" rel="noopener noreferrer" href="https://martinspoint.org/Contact-Us/Voice-of-Customer/Network-Feedback" target="_blank">Take Our Survey</a>
+</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+            <div class="col-md-3">
+                    <div class="component component__social-links">
+        <ul class="reset">
+                        <li><a class="btn btn__social icon-instagram" aria-label="" href="https://www.instagram.com/martinspointmilitary/"></a></li>
+                        <li><a class="btn btn__social icon-instagram" aria-label="Instagram" href="https://www.instagram.com/martinspointhealthcare/"></a></li>
+                        <li><a class="btn btn__social icon-facebook" aria-label="Facebook" href="https://www.facebook.com/MartinsPointHealthCare/"></a></li>
+                        <li><a class="btn btn__social icon-linked-in" aria-label="LinkedIn" href="https://www.linkedin.com/company/martinspointhealthcare/"></a></li>
+                        <li><a class="btn btn__social icon-youtube" aria-label="YouTube" href="https://www.youtube.com/channel/UC3iS-g7HaHGOKlSiBDtAiuw"></a></li>
+        </ul>
+    </div>
+
+            </div>
+        </div>
+
+        <!-- Bottom Row -->
+        <div class="row row__margin-top">
+                <div class="col">
+        <div class="nav nav__inline">
+                <ul class="reset">
+                    
+                            <li><a href="/Disclaimer-and-Policies/Online-Information-Practices">Online Information Practices</a></li>
+                            <li><a href="/21st-Century-Cures-Act">21st Century Cures Act</a></li>
+                            <li><a href="/Disclaimer-and-Policies/Code-of-Ethics">MPHC Code Of Ethics</a></li>
+                            <li><a href="/Disclaimer-and-Policies/Notice-of-Privacy-Practice">Notice of Privacy Practices</a></li>
+                </ul>
+        </div>
+        <div class="copyright">&#169; 2026 Martin&#39;s Point Health Care</div>
+    </div>
+
+        </div>
+    </div>
+</footer>
+
+<!-- JS ============================== -->
+<!-- inject:js -->
+<script src="/Scripts/dist/main.bundle.js?v=1608782991"></script>
+
+<!-- Salesforce Beacon -->
+<script src="https://aws-giaprod1-usgoveast1-cdp2-sdk-bundles.s3.us-gov-east-1.amazonaws.com/beacon/c360a/0396dc3a-18bb-4f01-8781-a9176c1d3652/scripts/c360a.min.js"></script>
+
+    </div>
+    
+
+    <div id="modalProgress" class="modal fade modal__progress" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body text-center">
+                    <div class="loading">
+    <div class="spinner" aria-hidden="true"></div>
+    <div class="header5">
+        Loading...
+    </div>
+</div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="modalForm" class="modal">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content" style="padding:25px;">
+                
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Cloudflare Web Analytics -->
+    <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "d826dc4825f445728b747a1fe553e448"}'></script>
+    <!-- End Cloudflare Web Analytics -->
+</body>
+</html>
