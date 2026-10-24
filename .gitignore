@@ -3,7 +3,8 @@ __pycache__/
 logs/
 logs_batch*.txt
 .pa_scan_cache.json
-downloaded_*/
 downloaded/*
+downloaded_*/*
 !downloaded/mostRecent/
+!downloaded_PAListFiles/mostRecent/
 .claude/settings.local.json
