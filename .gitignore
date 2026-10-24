@@ -3,5 +3,7 @@ __pycache__/
 logs/
 logs_batch*.txt
 .pa_scan_cache.json
-downloaded*/
+downloaded_*/
+downloaded/*
+!downloaded/mostRecent/
 .claude/settings.local.json
